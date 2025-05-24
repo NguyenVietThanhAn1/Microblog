@@ -1,1 +1,1 @@
-Microblog page projects
+"Microblog" là một ứng dụng web đơn giản cho phép người dùng đăng bài viết ngắn, tương tự như một nền tảng blog nhỏ. Ứng dụng sử dụng Flask làm framework chính, kết hợp với SQLAlchemy để quản lý cơ sở dữ liệu và Flask-Login để xử lý xác thực người dùng. Giao diện người dùng được xây dựng bằng HTML và Mako templates, cung cấp trải nghiệm người dùng thân thiện và dễ sử dụng.
