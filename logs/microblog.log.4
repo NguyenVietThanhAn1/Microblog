@@ -1,4 +1,15 @@
-2025-06-11 15:42:24,725 ERROR: Exception on /login [GET] [in C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py:875]
+2025-04-09 11:16:43,668 INFO: Microblog startup [in C:\Users\DELL\microblog\app\__init__.py:41]
+2025-04-13 00:11:03,344 INFO: Microblog startup [in C:\Users\DELL\microblog\app\__init__.py:41]
+2025-04-13 00:45:48,882 INFO: Microblog startup [in C:\Users\DELL\microblog\app\__init__.py:41]
+2025-04-13 00:47:18,568 INFO: Microblog startup [in C:\Users\DELL\microblog\app\__init__.py:41]
+2025-04-13 00:48:10,559 INFO: Microblog startup [in C:\Users\DELL\microblog\app\__init__.py:41]
+2025-04-13 00:48:49,686 INFO: Microblog startup [in C:\Users\DELL\microblog\app\__init__.py:41]
+2025-04-13 00:55:20,722 INFO: Microblog startup [in C:\Users\DELL\microblog\app\__init__.py:41]
+2025-04-13 00:55:27,829 INFO: Microblog startup [in C:\Users\DELL\microblog\app\__init__.py:41]
+2025-04-13 00:58:34,905 INFO: Microblog startup [in C:\Users\DELL\microblog\app\__init__.py:41]
+2025-04-13 01:00:58,403 INFO: Microblog startup [in C:\Users\DELL\microblog\app\__init__.py:41]
+2025-06-11 15:42:06,408 INFO: Microblog startup [in C:\Users\Hi\Desktop\project cá nhân\Microblog\app\__init__.py:43]
+2025-06-11 15:42:15,108 ERROR: Exception on /login [GET] [in C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py:875]
 Traceback (most recent call last):
   File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
     response = self.full_dispatch_request()
@@ -41,7 +52,7 @@ Traceback (most recent call last):
   File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'reset_password' instead?
-2025-06-11 15:42:26,542 ERROR: Exception on /login [GET] [in C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py:875]
+2025-06-11 15:42:21,836 ERROR: Exception on /login [GET] [in C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py:875]
 Traceback (most recent call last):
   File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
     response = self.full_dispatch_request()
@@ -84,47 +95,3 @@ Traceback (most recent call last):
   File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'reset_password' instead?
-2025-06-11 15:42:28,557 ERROR: Exception on /login [GET] [in C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py:875]
-Traceback (most recent call last):
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\app\routes.py", line 55, in login
-    return render_template('login.html', title='Sign In', form = form)
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
-    return _render(app, template, context)
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\templating.py", line 131, in _render
-    rv = template.render(context)
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
-    self.environment.handle_exception()
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\app\templates\login.html", line 2, in top-level template code
-    {% import "bootstrap_wtf.html" as wtf %}
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\app\templates\base.html", line 58, in top-level template code
-    {%block content%}{%endblock%}
-    ^^^^^^^^^^^^^
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\app\templates\login.html", line 10, in block 'content'
-    <a href="{{ url_for('reset_password_request')}}">Click to Reset It</a>
-    ^^^^^^^^^^^^^
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py", line 1121, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\flask\app.py", line 1110, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-        endpoint,
-    ...<3 lines>...
-        force_external=_external,
-    )
-  File "C:\Users\Hi\Desktop\project cá nhân\Microblog\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'reset_password' instead?
-2025-06-11 16:00:45,389 INFO: Microblog startup [in C:\Users\Hi\Desktop\project cá nhân\Microblog\app\__init__.py:43]
