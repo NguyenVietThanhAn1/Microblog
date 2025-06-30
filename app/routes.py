@@ -124,7 +124,7 @@ def follow(username):
             return redirect(url_for('user', username = username))
         current_user.follow(user)
         db.session.commit()
-        flash(_('You are following %(username}s!', username=username))
+        flash(_('You are following %(username)s!', username=username))
         return redirect(url_for('user', username=username))
     else:
         return redirect(url_for('index'))
