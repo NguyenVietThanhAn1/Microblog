@@ -10,8 +10,8 @@ def translate():
 @translate.command()
 def update():
     """Update all language."""
-    if os.system('pybabel extract -F babel.cfg -k _l messages.pot .') != 0:
-        raise RuntimeError('Failed to extract messages.')
+    if os.system('pybabel extract -F babel.cfg -k _l -o messages.pot .') != 0:
+        raise RuntimeError('Extract command failed.')
     if os.system('pybabel update -i messages.pot -d app/translations') != 0:
         raise RuntimeError('Update command failed.')
     os.remove('messages.pot')
